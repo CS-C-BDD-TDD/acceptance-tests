@@ -11,6 +11,6 @@ Scenario: Say hello in English
 	
 @Kiet_WIP 
 Scenario: Check new greeings 
-	Given I am at the application "http://demo-app-demo-app.127.0.0.1.nip.io/" 
+	Given I am at the application "http://172.17.0.9:8080/" 
 	When I check the latest version 
 	Then the version should be "1.0.1"

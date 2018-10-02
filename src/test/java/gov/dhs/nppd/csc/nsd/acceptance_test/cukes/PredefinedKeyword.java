@@ -5,7 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class predefinedKeyword {
+public class PredefinedKeyword {
 
 	@Given("^a STIX file contains a free text field of \"([^\"]*)\"$")
 	public void a_STIX_file_contains_a_free_text_field_of(String arg1) throws Exception {

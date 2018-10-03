@@ -27,7 +27,9 @@ public class UserLogin {
 
 	@When("^I login to the application website$")
 	public void i_login_to_the_application_website() throws Exception {
-		analystSteps.logins(username, password);
+		analystSteps.enters_username(username);
+		analystSteps.enters_password(password);
+		analystSteps.clicks_signin_button();
 	}
 
 	@Then("^I should be able to begin my work on human review activity$")

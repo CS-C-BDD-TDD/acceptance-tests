@@ -17,8 +17,26 @@ public class AnalystSteps {
 		loginPage.logins(username, password);
 	}
 
+	@Step
 	public String gets_title_of_human_review_pending_page() {
 		return loginPage.getsMainPageTitle();
+	}
+
+	@Step
+	public void enters_username(String username) {
+		loginPage.entersUserName(username);
+
+	}
+
+	@Step
+	public void enters_password(String password) {
+		loginPage.enterPassword(password);
+
+	}
+
+	@Step
+	public void clicks_signin_button() {
+		loginPage.clickSignIn();
 	}
 
 }

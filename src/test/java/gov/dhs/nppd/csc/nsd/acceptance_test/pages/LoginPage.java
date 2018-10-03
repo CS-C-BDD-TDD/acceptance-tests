@@ -13,6 +13,9 @@ public class LoginPage extends PageObject {
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement usernameField;
 
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement signinButton;
+
 	public void visit(String hrWebsiteUrl) {
 		openAt(hrWebsiteUrl);
 	}
@@ -24,6 +27,18 @@ public class LoginPage extends PageObject {
 
 	public String getsMainPageTitle() {
 		return this.getTitle();
+	}
+
+	public void entersUserName(String username) {
+		usernameField.sendKeys(username);
+	}
+
+	public void enterPassword(String password) {
+		passwordField.sendKeys(password);
+	}
+
+	public void clickSignIn() {
+		signinButton.click();
 	}
 
 }

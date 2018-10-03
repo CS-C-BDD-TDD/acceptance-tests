@@ -10,8 +10,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>acceptance-test</name>
-	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,13 +73,7 @@
 			<version>1.3</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>5.1.0.RELEASE</version>
-			<scope>test</scope>
-		</dependency>
+
 
 	</dependencies>
 	<build>
